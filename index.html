@@ -1,50 +1,1574 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Aerial by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en" class="notranslate macos chrome" translate="no">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Kings Film LLC - Professional Marketing Agency</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.wegic.ai/assets/email/logo.ico">
+    <meta name="description" content="Kings Film LLC offers professional photography, videography, and comprehensive marketing services for businesses, real estate, e-commerce, and more.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Kings Film LLC - Professional Marketing Agency">
+    <meta property="og:description" content="Your trusted team for professional photography, videography, and marketing services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kingsfilmllc.com">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+      /* Reset and Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      :root {
+        --primary: #1a1a1a;
+        --secondary: #d4af37; /* Gold color for "Kings" theme */
+        --text: #333;
+        --light-text: #777;
+        --background: #fff;
+        --light-bg: #f8f8f8;
+        --border: #eaeaea;
+        --transition: all 0.3s ease;
+      }
+      
+      body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background-color: var(--background);
+      }
+      
+      h1, h2, h3, h4 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        color: var(--primary);
+      }
+      
+      h1 {
+        font-size: 3.5rem;
+      }
+      
+      h2 {
+        font-size: 2.5rem;
+        position: relative;
+        padding-bottom: 1rem;
+      }
+      
+      h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 3px;
+        background-color: var(--secondary);
+      }
+      
+      h3 {
+        font-size: 1.75rem;
+      }
+      
+      p {
+        margin-bottom: 1.5rem;
+        color: var(--light-text);
+      }
+      
+      a {
+        color: var(--secondary);
+        text-decoration: none;
+        transition: var(--transition);
+      }
+      
+      a:hover {
+        color: var(--primary);
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+      
+      .btn {
+        display: inline-block;
+        background-color: var(--secondary);
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      
+      .btn:hover {
+        background-color: var(--primary);
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      
+      .btn-outline {
+        background-color: transparent;
+        color: var(--secondary);
+        border: 2px solid var(--secondary);
+      }
+      
+      .btn-outline:hover {
+        background-color: var(--secondary);
+        color: white;
+      }
+      
+      section {
+        padding: 5rem 0;
+      }
+      
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      
+      .section-title h2 {
+        display: inline-block;
+      }
+      
+      .section-title h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      /* Header & Navigation */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+        transition: var(--transition);
+      }
+      
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .logo {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--primary);
+      }
+      
+      .logo span {
+        color: var(--secondary);
+      }
+      
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      
+      nav ul li {
+        margin-left: 2rem;
+      }
+      
+      nav ul li a {
+        color: var(--primary);
+        font-weight: 500;
+        position: relative;
+      }
+      
+      nav ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--secondary);
+        transition: var(--transition);
+      }
+      
+      nav ul li a:hover::after,
+      nav ul li a.active::after {
+        width: 100%;
+      }
+      
+      .mobile-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--primary);
+      }
+      
+      /* Language Switcher */
+      .language-switcher {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+      }
+      
+      .language-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        color: var(--primary);
+        padding: 0.25rem 0.5rem;
+        transition: var(--transition);
+      }
+      
+      .language-btn.active {
+        color: var(--secondary);
+        font-weight: 600;
+      }
+      
+      .language-btn:hover {
+        color: var(--secondary);
+      }
+      
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding-top: 80px;
+        overflow: hidden;
+      }
+      
+      .hero-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      
+      .hero-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .hero-slide.active {
+        opacity: 1;
+      }
+      
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+      }
+      
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .hero h1 {
+        color: white;
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .hero p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+      }
+      
+      .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+      
+      /* About Section */
+      .about {
+        background-color: var(--light-bg);
+      }
+      
+      .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+      
+      .about-image {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .about-text h2::after {
+        left: 0;
+        transform: none;
+      }
+      
+      /* Expertise Section */
+      .expertise-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+      
+      .expertise-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+      }
+      
+      .expertise-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .expertise-icon {
+        font-size: 2.5rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+      }
+      
+      /* Process Section */
+      .process {
+        background-color: var(--light-bg);
+      }
+      
+      .process-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      
+      .process-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        position: relative;
+        transition: var(--transition);
+      }
+      
+      .process-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .process-number {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--secondary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+      }
+      
+      /* Services Section */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      
+      .service-card {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+      }
+      
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .service-image {
+        height: 200px;
+        overflow: hidden;
+      }
+      
+      .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+      }
+      
+      .service-card:hover .service-image img {
+        transform: scale(1.1);
+      }
+      
+      .service-content {
+        padding: 1.5rem;
+      }
+      
+      .service-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .service-features {
+        margin: 1.5rem 0;
+      }
+      
+      .service-feature {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0.75rem;
+      }
+      
+      .feature-icon {
+        color: var(--secondary);
+        margin-right: 0.5rem;
+      }
+      
+      /* Portfolio Section */
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+      
+      .portfolio-item {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 300px;
+      }
+      
+      .portfolio-image {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .portfolio-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+      }
+      
+      .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: var(--transition);
+      }
+      
+      .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+      }
+      
+      .portfolio-item:hover .portfolio-image img {
+        transform: scale(1.1);
+      }
+      
+      .portfolio-overlay h3 {
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+      
+      .portfolio-overlay p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      /* Stats Section */
+      .stats {
+        background-color: var(--primary);
+        color: white;
+        padding: 4rem 0;
+      }
+      
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        text-align: center;
+      }
+      
+      .stat-item h3 {
+        font-size: 3rem;
+        color: var(--secondary);
+        margin-bottom: 0.5rem;
+      }
+      
+      .stat-item p {
+        color: white;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      
+      /* Testimonials Section */
+      .testimonials {
+        background-color: var(--light-bg);
+        text-align: center;
+      }
+      
+      .testimonial-card {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        margin: 0 auto;
+        max-width: 800px;
+      }
+      
+      .testimonial-text {
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+      }
+      
+      .testimonial-author {
+        font-weight: 600;
+        color: var(--primary);
+      }
+      
+      .testimonial-role {
+        color: var(--light-text);
+        font-size: 0.9rem;
+      }
+      
+      /* Pricing Section */
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      
+      .pricing-card {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: var(--transition);
+        text-align: center;
+      }
+      
+      .pricing-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .pricing-header {
+        padding: 2rem;
+        background-color: var(--light-bg);
+      }
+      
+      .pricing-name {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .pricing-price {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--secondary);
+      }
+      
+      .pricing-period {
+        color: var(--light-text);
+        font-size: 0.9rem;
+      }
+      
+      .pricing-features {
+        padding: 2rem;
+      }
+      
+      .pricing-feature {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+      
+      .pricing-feature:last-child {
+        border-bottom: none;
+      }
+      
+      .pricing-cta {
+        padding: 0 2rem 2rem;
+      }
+      
+      /* FAQ Section */
+      .faq {
+        background-color: var(--light-bg);
+      }
+      
+      .faq-item {
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+      
+      .faq-question {
+        padding: 1.5rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+      }
+      
+      .faq-question::after {
+        content: '+';
+        font-size: 1.5rem;
+        color: var(--secondary);
+      }
+      
+      .faq-item.active .faq-question::after {
+        content: '-';
+      }
+      
+      .faq-answer {
+        padding: 0 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+      }
+      
+      .faq-item.active .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+        max-height: 500px;
+      }
+      
+      /* CTA Section */
+      .cta {
+        background-color: var(--primary);
+        color: white;
+        text-align: center;
+        padding: 5rem 0;
+      }
+      
+      .cta h2 {
+        color: white;
+      }
+      
+      .cta h2::after {
+        background-color: var(--secondary);
+      }
+      
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      
+      /* Contact Section */
+      .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+      
+      .contact-info h3 {
+        margin-bottom: 1.5rem;
+      }
+      
+      .contact-details {
+        margin-bottom: 2rem;
+      }
+      
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+      }
+      
+      .contact-icon {
+        margin-right: 1rem;
+        color: var(--secondary);
+        font-size: 1.2rem;
+      }
+      
+      .contact-form .form-group {
+        margin-bottom: 1.5rem;
+      }
+      
+      .contact-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 1rem;
+        transition: var(--transition);
+      }
+      
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: none;
+        border-color: var(--secondary);
+        box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+      }
+      
+      .contact-form textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+      
+      /* Footer */
+      footer {
+        background-color: var(--primary);
+        color: white;
+        padding: 4rem 0 2rem;
+      }
+      
+      .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        margin-bottom: 3rem;
+      }
+      
+      .footer-logo {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1rem;
+      }
+      
+      .footer-logo span {
+        color: var(--secondary);
+      }
+      
+      .footer-about p {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      
+      .footer-heading {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        color: white;
+      }
+      
+      .footer-links ul {
+        list-style: none;
+      }
+      
+      .footer-links li {
+        margin-bottom: 0.75rem;
+      }
+      
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.7);
+        transition: var(--transition);
+      }
+      
+      .footer-links a:hover {
+        color: var(--secondary);
+      }
+      
+      .footer-social {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      
+      .social-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 50%;
+        transition: var(--transition);
+      }
+      
+      .social-icon:hover {
+        background-color: var(--secondary);
+        transform: translateY(-3px);
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+      }
+      
+      /* Responsive Styles */
+      @media (max-width: 992px) {
+        h1 {
+          font-size: 3rem;
+        }
+        
+        h2 {
+          font-size: 2.2rem;
+        }
+        
+        .about-content,
+        .contact-container {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        
+        .about-image {
+          order: -1;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        
+        h2 {
+          font-size: 2rem;
+        }
+        
+        section {
+          padding: 4rem 0;
+        }
+        
+        .mobile-toggle {
+          display: block;
+        }
+        
+        nav {
+          position: fixed;
+          top: 80px;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          padding: 1rem 0;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          transform: translateY(-150%);
+          transition: var(--transition);
+        }
+        
+        nav.active {
+          transform: translateY(0);
+        }
+        
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        nav ul li {
+          margin: 1rem 0;
+        }
+        
+        .hero-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .hero-buttons .btn {
+          width: 100%;
+          max-width: 300px;
+          margin-bottom: 1rem;
+        }
+        
+        .language-switcher {
+          margin-left: 0;
+          margin-top: 1rem;
+          justify-content: center;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .container {
+          padding: 0 1rem;
+        }
+        
+        h1 {
+          font-size: 2.2rem;
+        }
+        
+        h2 {
+          font-size: 1.8rem;
+        }
+        
+        .hero {
+          padding-top: 60px;
+        }
+        
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo"><span>Kings</span> Film LLC</a>
+        <div class="language-switcher">
+          <button class="language-btn active" data-lang="en">EN</button>
+          <span>|</span>
+          <button class="language-btn" data-lang="es">ES</button>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>kINGSfILM</h1>
-						<p>Cine y Marketing &nbsp;&bull;&nbsp; Fotografia Profesional &nbsp;&bull;&nbsp; Videografia Profesional</p>
-						<p>Film and Marketing &nbsp;&bull;&nbsp; Professional Photography &nbsp;&bull;&nbsp; Professional Videography</p>
-						<nav>
-							<ul>
-								<li><a href="https://www.instagram.com/_kingsfilm_/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+    <!-- Hero Section with the provided images -->
+    <section class="hero" id="home">
+      <div class="hero-slider">
+        <div class="hero-slide active">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC00827.JPG-9MgNmMFv3x0vSLxpy4aJY4CICRuHhf.jpeg" alt="Professional filming at an elegant venue" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="hero-slide">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC02245.JPG-boNs2KGL43amxdMcZLfdlZynTPLKAC.jpeg" alt="Professional event coverage with stage lighting" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Your Vision, Our Expertise</h1>
+        <p>Kings Film LLC is a full-service marketing agency providing professional photography, videography, and comprehensive marketing solutions for businesses of all sizes.</p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn">View Our Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Kings Film LLC</h2>
+            <p>Founded in 2021, Kings Film LLC has established itself as a premier marketing agency providing photography, videography, and comprehensive marketing solutions. Our team of skilled professionals combines technical expertise with creative vision to deliver exceptional results.
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+            <p>We believe that every brand tells a unique story, and we are committed to capturing and sharing those stories with authenticity and artistic excellence. Whether it's real estate marketing, e-commerce solutions, or creative content production, we approach each project with dedication and passion.</p>
+            <p>Our state-of-the-art equipment and innovative marketing strategies ensure that we deliver the highest quality results that exceed our clients' expectations and drive real business growth.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7826.JPG-liGrpnerLmWBEiLPdrPi6ellpz8a2Z.jpeg" alt="Modern interior design with gold fixtures">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Creative Expertise</h2>
+        </div>
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <div class="expertise-icon">📸</div>
+            <h3>Stunning Photography</h3>
+            <p>Capture the essence of every moment with our professional photography services.</p>
+          </div>
+          <div class="expertise-card">
+            <div class="expertise-icon">🎥</div>
+            <h3>Cinematic Videography</h3>
+            <p>Bring your stories to life with our high-quality video production.</p>
+          </div>
+          <div class="expertise-card">
+            <div class="expertise-icon">🏠</div>
+            <h3>Real Estate Marketing</h3>
+            <p>Enhance property listings with our tailored marketing solutions.</p>
+          </div>
+          <div class="expertise-card">
+            <div class="expertise-icon">🛒</div>
+            <h3>E-commerce Solutions</h3>
+            <p>Boost your online presence with our comprehensive e-commerce services.</p>
+          </div>
+          <div class="expertise-card">
+            <div class="expertise-icon">🚗</div>
+            <h3>Professional Auto Photography</h3>
+            <p>Showcase your vehicles with stunning, high-impact automotive photography.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Process</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-number">01</div>
+            <h3>Consultation</h3>
+            <p>Consultation to understand your vision and needs.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-number">02</div>
+            <h3>Crafting Solutions</h3>
+            <p>Crafting customized solutions to meet your objectives.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-number">03</div>
+            <h3>Delivering Results</h3>
+            <p>Delivering results that exceed expectations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+        </div>
+        
+        <!-- Photography Services -->
+        <div class="service-card" style="margin-bottom: 3rem;">
+          <div class="service-content">
+            <h3>Photography Excellence</h3>
+            <p>Capture Your Vision</p>
+            <p>Our photography services provide stunning visuals that perfectly reflect your brand's essence and style.</p>
+            
+            <div class="service-features">
+              <div class="service-feature">
+                <span class="feature-icon">✓</span>
+                <p>Tailored Visuals: Customized photography sessions that align with your specific needs and objectives.</p>
+              </div>
+              <div class="service-feature">
+                <span class="feature-icon">✓</span>
+                <p>High-Quality Imagery: Delivering crisp, high-resolution images that enhance your brand's visual narrative.</p>
+              </div>
+              <div class="service-feature">
+                <span class="feature-icon">✓</span>
+                <p>Creative Direction: Guidance and expertise to ensure your photoshoot captures the intended message and mood.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Marketing Services -->
+        <div class="service-card" style="margin-bottom: 3rem;">
+          <div class="service-content">
+            <h3>Marketing Services</h3>
+            <p>Comprehensive marketing solutions to elevate your brand and drive business growth.</p>
+            
+            <div class="service-features">
+              <div class="service-feature">
+                <span class="feature-icon">✓</span>
+                <p>Brand Strategy: Develop a cohesive brand identity that resonates with your target audience.</p>
+              </div>
+              <div class="service-feature">
+                <span class="feature-icon">✓</span>
+                <p>Digital Marketing: Social media management, content creation, and online advertising campaigns.</p>
+              </div>
+              <div class="service-feature">
+                <span class="feature-icon">✓</span>
+                <p>Market Analysis: Research and insights to help you understand your market and competition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Videography Services -->
+        <div class="service-card" style="margin-bottom: 3rem;">
+          <div class="service-content">
+            <h3>Videography Services</h3>
+            <p>Explore our top-notch videography services that bring your stories to life with cinematic quality.</p>
+          </div>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dji_fly_20241012_133854_84_1728758345601_photo_optimized%202.jpg-FrvEpxcR7qmVEmyFkzSC7jeAt8VsRb.jpeg" alt="Aerial Real Estate Photography">
+            </div>
+            <div class="service-content">
+              <h3>Real Estate Photography</h3>
+              <p>Enhance property listings with professional real estate photography that captures every detail.</p>
+              <a href="#" class="btn" style="margin-top: 1rem;">Explore Now</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image">
+              <img src="https://source.unsplash.com/random/600x400/?ecommerce" alt="E-commerce Solutions">
+            </div>
+            <div class="service-content">
+              <h3>E-commerce Solutions</h3>
+              <p>Boost your online store with high-quality product images and engaging content.</p>
+              <a href="#" class="btn" style="margin-top: 1rem;">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E-commerce Section -->
+    <section class="about" id="ecommerce">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Innovative E-commerce</h2>
+            <h3>Your Partner in E-commerce Growth</h3>
+            <p>Empowering online businesses with creative solutions and strategic insights.</p>
+            <p>Our platform supports seamless integration and enhances user experience for maximum engagement.</p>
+            <p>We are committed to driving your e-commerce success with innovative tools and strategies.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://source.unsplash.com/random/600x400/?ecommerce-store" alt="E-commerce Solutions">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>2021</h3>
+            <p>Founded</p>
+          </div>
+          <div class="stat-item">
+            <h3>142</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3>35</h3>
+            <p>Global Clients</p>
+          </div>
+          <div class="stat-item">
+            <h3>18</h3>
+            <p>Awards Won</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Discover Our Services</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://source.unsplash.com/random/600x600/?realestate-interior" alt="Real Estate Interior">
+            </div>
+            <div class="portfolio-overlay">
+              <h3>Stunning Interiors</h3>
+              <p>Real Estate</p>
+              <a href="#" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://source.unsplash.com/random/600x600/?realestate-exterior" alt="Real Estate Exterior">
+            </div>
+            <div class="portfolio-overlay">
+              <h3>Beautiful Exteriors</h3>
+              <p>Real Estate</p>
+              <a href="#" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://source.unsplash.com/random/600x600/?drone" alt="Aerial Photography">
+            </div>
+            <div class="portfolio-overlay">
+              <h3>Aerial Views</h3>
+              <p>Drone</p>
+              <a href="#" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC00832.jpg-S1I9AYZXGnyW7WgqudAn6e4bv6xl3y.jpeg" alt="Event Photography">
+            </div>
+            <div class="portfolio-overlay">
+              <h3>Event Photography</h3>
+              <p>Events</p>
+              <a href="#" class="btn btn-outline">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-title">
+          <h2>Pricing Options</h2>
+          <p>Service Packages Tailored for You</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Package #1</h3>
+              <div class="pricing-price">$400</div>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature">10 Professional Edited Photos</div>
+              <div class="pricing-feature">1 Professional Edited Video</div>
+            </div>
+            <div class="pricing-cta">
+              <a href="#contact" class="btn">Select Package</a>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Package #2</h3>
+              <div class="pricing-price">$500</div>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature">1 4K Drone Photo</div>
+              <div class="pricing-feature">1 Professional Edited Video</div>
+            </div>
+            <div class="pricing-cta">
+              <a href="#contact" class="btn">Select Package</a>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Package #3</h3>
+              <div class="pricing-price">$600</div>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature">25 Professional Edited Photos</div>
+              <div class="pricing-feature">1 4K Drone Video</div>
+              <div class="pricing-feature">18 Professional Edited Photos</div>
+              <div class="pricing-feature">1 Professional Edited Video</div>
+              <div class="pricing-feature">1 4K Drone Photo</div>
+            </div>
+            <div class="pricing-cta">
+              <a href="#contact" class="btn">Select Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">What services does Kings Film LLC offer?</div>
+            <div class="faq-answer">
+              <p>We provide a range of services including photography, videography, real estate marketing, and e-commerce solutions.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How can I book a session?</div>
+            <div class="faq-answer">
+              <p>You can book a session by contacting us through our website or calling our office.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What is your pricing structure?</div>
+            <div class="faq-answer">
+              <p>Our pricing is flexible and tailored to meet your specific needs. Contact us for a detailed quote.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Clients Say</h2>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Kings Film LLC has transformed our online presence with their exceptional e-commerce solutions."</p>
+          <p class="testimonial-author">Emily Davis</p>
+          <p class="testimonial-role">E-commerce Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Start Your Project Today</h2>
+        <p>Join us to bring your vision to life.</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn">Get Started</a>
+          <a href="#services" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <p>5208 N 10th St<br>McAllen, TX 78504<br>United States</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <div>
+                  <p>(956) 624-9635</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <p><a href="mailto:infokingsfilm@kingsfilmmedia.com">infokingsfilm@kingsfilmmedia.com</a></p>
+                </div>
+              </div>
+            </div>
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+            Saturday: 10:00 AM - 4:00 PM<br>
+            Sunday: Closed</p>
+          </div>
+          <div class="contact-form">
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <input type="text" id="service" name="service">
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-about">
+            <div class="footer-logo"><span>Kings</span> Film LLC</div>
+            <p>Professional marketing agency providing photography, videography, and comprehensive marketing solutions for all your business needs.</p>
+            <div class="footer-social">
+              <a href="#" class="social-icon" aria-label="Facebook">f</a>
+              <a href="#" class="social-icon" aria-label="Instagram">i</a>
+              <a href="#" class="social-icon" aria-label="Twitter">t</a>
+              <a href="#" class="social-icon" aria-label="YouTube">y</a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-heading">Services</h3>
+            <ul>
+              <li><a href="#">Photography</a></li>
+              <li><a href="#">Videography</a></li>
+              <li><a href="#">Real Estate Marketing</a></li>
+              <li><a href="#">E-commerce Solutions</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Kings Film LLC. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Mobile Navigation Toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const nav = document.querySelector('nav');
+        
+        mobileToggle.addEventListener('click', function() {
+          nav.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            nav.classList.remove('active');
+          });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+        
+        // Header scroll effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 50) {
+            header.style.padding = '0.5rem 0';
+            header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+          } else {
+            header.style.padding = '1rem 0';
+            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+          }
+        });
+        
+        // Hero slider functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        
+        function showSlide(index) {
+          slides.forEach(slide => slide.classList.remove('active'));
+          slides[index].classList.add('active');
+        }
+        
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+        
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+        
+        // FAQ functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          question.addEventListener('click', () => {
+            item.classList.toggle('active');
+          });
+        });
+        
+        // Language switcher
+        const languageBtns = document.querySelectorAll('.language-btn');
+        languageBtns.forEach(btn => {
+          btn.addEventListener('click', function() {
+            languageBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            // Here you would implement the actual language switching functionality
+            // For now, we'll just show an alert
+            alert('Language switching functionality would be implemented here.');
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
